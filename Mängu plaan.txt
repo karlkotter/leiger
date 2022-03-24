@@ -1,28 +1,97 @@
 Tekstipõhine mäng
 Eesti Legendide kohta
 
-1. Saab valida oma tegelase
+
+MENÜÜ
+
+1. Kuvatakse menüü mängu alustamiseks/lõpetamiseks
+
+2. Tegelase loomine, saab valida oskuspunkte (STRENGTH, HP ,EXP)
 Vägimees Leiger
 
-2. Kuvatakse tegelase lugu tegelase kohta
+#################################################
 
-3. Antakse valida mis teed minna
-Pikem tee (Turvalisem)
-Lühem tee (Riskantsem)
 
-4. Valides lühema tee tulevad vaenalsed: Saarlased
+MÄNG ALGAB
+
+
+
+
+[3. Kuvatakse tegelase lugu tegelase kohta ja tegelane alustab kodust]
+
+
+4. Antakse valida mis teed minna
+
+----LEVEL1---------------
+
+Pikem tee (Turvalisem) 1-6 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT] (((Võit = Antakse [+1] (STRENGTH, HP)))))
+Lühem tee (Riskantsem) 1-3 Vaenlast (Tugevamad vaenlased) [PAREM LOOT] ((((Võit = Antakse [+3] (STRENGTH, HP))))
+
+--------LEVEL2------------
+
+Üle mäe (Turvalisem) 1-8 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT]
+Läbi metsa (Riskantsem) 1-4 Vaenlast (Tugevamad vaenlased) [PAREM LOOT]
+ 
+------------LEVEL3--------
+
+Läbi jõe (Turvalisem) 1-12 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT]
+Üle silla (Riskantsem) 1-6 Vaenlast (Tugevamad vaenlased) [PAREM LOOT]
+
+##################################################
+
+
+
+
+VÕITLUS:
 
 5. Võitluse ajal saab valida millist rünnakut kasutada, tugevam rünne kasutab rohkem staminat
 
-Võitlus:
-Tugev löök (Kasutab palju võhma, suurem kahju)
-Nõrk löök (Kasutab vähem võhma, väiksem kahju)
+VÕITLUSE VALIKUD:
+ 
+käe löök (Kasutab vähem võhma, väiksem kahju)
+Jala löök (Kasutab palju võhma, suurem kahju)
+Blokeerimine (Taastab võhma, saab vähem kahju)
 
-Stats Taastamine:
-Vihtlemine (Taastab Leigri elud)
-Magamine (Taastab leigri võhma)
+VÕIT: 
 
 6. Kui Leiger võidab võitluse saab ta edasi minna, kui kaotab peab kodust (Safe spot) alustama
+---------------------------------------------
 
-7.
+CHECKPOINT: Pärast võitlust antakse valik minna checkpointi
 
+Magamine (Taastab leigri võhma ja elud)
+---------------------------------------------
+
+
+##################################################
+
+
+
+Kaotus: Spawnib kodus (Alustab uuesti, Mängu ajal saadud stats kaovad ära)
+
+
+7. Leiger jätkab oma teekonda 
+
+
+Valik:
+
+
+##################################################
+
+
+LOOT
+
+Taastab:
+Õun - Taastab Leigeri võhma [+3] ja elusid [+3] võitluse ajal
+
+Annab juurde:
+Armor - Annab juurde [+5] HP
+
+##################################################
+
+
+VAENLASED:
+
+
+Boss:
+VANAPAGAN (Kõige tugevam vaenlane)
