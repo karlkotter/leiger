@@ -1,0 +1,28 @@
+IT21
+Loo Eesti teemaline tekstiline mäng mõne eeposes (legend, muistend vms) tuntud tegelase ja sündmuste kohta. Hetkel ainult tekstiline, mille hiljem muudad graafiliseks (GoDot). Meeskonnas MAX 3 õpilast.
+21p (esitatud õigeaegselt) - 5
+15.75p - 4
+10.5p - 3
+
+Proloog
+Mõelge välja ja kuvage mängu legend - peategelasel on mingi eesmärk, mida vaenlased üritavad takistada. Kuva tekst tükkide kaupa (aeg või tühik, aja puhul lisa muutujasse, et testimisel ei peaks palju ootama). Lisada mängu kommentaariumisse autorid, “ametid” ning kogu mängu mõte ja kuidas tegevust juhid. Kogu töö on Githubis. 
+Kuva menüü mängu alustamiseks ja lõpetamiseks.
+Hindamine: kommentaarid, teksti kuvamine osade kaupa, salvestatud githubi  3p
+I osa
+Kasutaja loomine (Save/Load) - seaded salvestatakse tema nimelisse tekstifaili. Kasutaja puhul antakse peategelasele nimi ning jagatakse laiali oskuspunktid (näiteks STR, HP, EXP, WIS vms). Oskuspunktide puhul kontrollitakse, et see lõhki ei läheks. Tekita loogika, et kui kasutaja on olemas, siis kasutatakse olemasolevaid atribuute.
+Hindamine: 
+Kommentaari sõlmed. Et teaks mida oodata. 1p
+Kasutaja salvestamine ja laadimine faili 2p
+Oskuspunktide jagamine ei lähe lõhki või ei jää puudu 2p
+Kontroll, kas kasutaja on juba olemas 1p
+Kasutatud on tsüklit ja oma loodud funktsioone 2p
+II osa
+Seiklus algab. Esimeste lihtsamate vaenlastega saab võidelda. Kummaltki läheb elusid maha. Kui võidad saad skoori juurde. Kui saad surma, saab mäng läbi. Kui võidad, siis näiteks elud taastuvad ja seiklus jätkub. Tulemused salvestatakse (näiteks skoor, oskuspunktide suurenemine vms). 
+Kangelane saab valida (või vastavalt oskustele) oma võitlusvahendid teatud tugevusega. Näiteks kui oled maag ja valid võlukepi, siis selle DMG suureneb.
+Võitlused/väljakutsed varieeruvad, et on võimalik ka kaotada.
+Punktid: 
+mängul on loogika (skoor, level, areng vms) (2p)
+andmeid uuendatakse tekstifailis  (2p)
+ise loodud idee (2p)
+Võidu/kaotamise puhul näidatakse skoori (2p)
+Võimalus mängu uuesti alustada või lõpetada (2p)
