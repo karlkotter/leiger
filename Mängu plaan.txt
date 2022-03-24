@@ -1,0 +1,28 @@
+Tekstipõhine mäng
+Eesti Legendide kohta
+
+1. Saab valida oma tegelase
+Vägimees Leiger
+
+2. Kuvatakse tegelase lugu tegelase kohta
+
+3. Antakse valida mis teed minna
+Pikem tee (Turvalisem)
+Lühem tee (Riskantsem)
+
+4. Valides lühema tee tulevad vaenalsed: Saarlased
+
+5. Võitluse ajal saab valida millist rünnakut kasutada, tugevam rünne kasutab rohkem staminat
+
+Võitlus:
+Tugev löök (Kasutab palju võhma, suurem kahju)
+Nõrk löök (Kasutab vähem võhma, väiksem kahju)
+
+Stats Taastamine:
+Vihtlemine (Taastab Leigri elud)
+Magamine (Taastab leigri võhma)
+
+6. Kui Leiger võidab võitluse saab ta edasi minna, kui kaotab peab kodust (Safe spot) alustama
+
+7.
+
