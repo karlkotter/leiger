@@ -19,23 +19,39 @@ MÄNG ALGAB
 
 [3. Kuvatakse tegelase lugu tegelase kohta ja tegelane alustab kodust]
 
+'''
+Selsamal ajal, kui Suur Tõll Saaremaal tähtsaid töösid tegi,
+ elas Hiiumaal Tõlli vennapoeg Leiger.
+ Seegi oli niisamasugune tugev mees nagu Suur Tõll, ehk küll viimane jõu poolest temast,
+ üle käis. Leiger ja Suur Tõll armastasivad mõlemad vihtlemist. Suur Tõll käskinud Leigri sauna ehitada,
+ tal enesel polla ehituseks aega. Leiger hakanudki tööle. Vedanud kümne sülla pikkused palgid metsast välja.
+ Neist ehitanud siis vihtlemisesauna. Ahi saanud nii suur nagu saunamehe saun. 
+Kerisekivideks üksi vedanud Leiger seitse sülda ümmargusi kiva kokku. Kui saun valmis saanud, tulnud Suur Tõll Hiiumaale sagedasti vihtlema
+. Leiger kütnud ahju tublisti soojaks, võtnud siis kummagi õla peale vaadi vett ja viinud leile viskamiseks sauna.
+ Peale selle tapnud Leiger iga korra, kui Suur Tõll sauna tulnud, kaks härga ja keetnud need ära.
+ Saunast ära tulles kutsunud Leiger Suure Tõlli ikka enese juure sööma.
+ Kumbki söönud terve härja ja teo leiva ära. Olnud kõht täis, siis läinud Suur Tõll Saaremaale magama,
+ Leiger aga heitnud tihti sauna leiba luusse laskema. 
+ 
+ Kuid, siis kui Leiger magas tuli vanapagan kes viis Leigri naise minema ning nii pidigi Leiger asuma pikale retkele.
+'''
 
 4. Antakse valida mis teed minna
 
 ----LEVEL1---------------
 
-Pikem tee (Turvalisem) 1-6 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT] (((Võit = Antakse [+1] (STRENGTH, HP)))))
-Lühem tee (Riskantsem) 1-3 Vaenlast (Tugevamad vaenlased) [PAREM LOOT] ((((Võit = Antakse [+3] (STRENGTH, HP))))
+Pikem tee (Turvalisem) 1-6 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT] (((Võit = Antakse [+10] (STRENGTH, HP)))))
+Lühem tee (Riskantsem) 1-3 Vaenlast (Tugevamad vaenlased) [PAREM LOOT] ((((Võit = Antakse [+30] (STRENGTH, HP))))
 
 --------LEVEL2------------
 
-Üle mäe (Turvalisem) 1-8 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT]
-Läbi metsa (Riskantsem) 1-4 Vaenlast (Tugevamad vaenlased) [PAREM LOOT]
+Üle mäe (Turvalisem) 1-8 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT] (((Võit = Antakse [+20] (STRENGTH, HP)))))
+Läbi metsa (Riskantsem) 1-4 Vaenlast (Tugevamad vaenlased) [PAREM LOOT] ((((Võit = Antakse [+60] (STRENGTH, HP))))
  
 ------------LEVEL3--------
 
-Läbi jõe (Turvalisem) 1-12 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT]
-Üle silla (Riskantsem) 1-6 Vaenlast (Tugevamad vaenlased) [PAREM LOOT]
+Läbi jõe (Turvalisem) 1-12 Vaenlast (Nõrgemad vaenlased) [HALVEM LOOT] ((((Võit = Antakse [+30] (STRENGTH, HP))))
+Üle silla (Riskantsem) 1-6 Vaenlast (Tugevamad vaenlased) [PAREM LOOT] ((((Võit = Antakse [+90] (STRENGTH, HP))))
 
 ##################################################
 
@@ -82,16 +98,43 @@ Valik:
 LOOT
 
 Taastab:
-Õun - Taastab Leigeri võhma [+3] ja elusid [+3] võitluse ajal
+Õun - Taastab Leigeri võhma [+40] ja elusid [+40] võitluse ajal
+Porgand - Taastab Leigeri võhma [+60] ja elusid [+20] võitluse ajal
+Kartul - Taastab Leigeri võhma [+20] ja elusid [+60] võitluse ajal
+Vihtlemine - Taastab Leigri võhma [+100] ja elusid [+100] võitluse ajal
 
 Annab juurde:
-Armor - Annab juurde [+5] HP
+Armor - Annab juurde [+60] HP
+Mõõk - Annab juurde [+60] STRENGTH
+Kiiver - Annab juurde [+30] HP
+
 
 ##################################################
 
 
 VAENLASED:
 
+LEVEL1
+
+Hundid
+
+LEVEL2
+
+Vormsi sõjavägi
+
+LEVEL3
+
+
+
 
 Boss:
 VANAPAGAN (Kõige tugevam vaenlane)
+
+
+MÄNGU LÕPP
+
+'''
+Nii võitisgi Leiger vanapaganat ning ta võis uuesti minna oma sauna juurde magama.
+'''
+CREDITS:
+
