@@ -35,7 +35,7 @@ while valik != 3:
         
         print("m2ng")
     elif valik == 2:
-        print("Selsamal ajal, kui Suur Tõll Saaremaal tähtsaid töösid tegi, elas Hiiumaal Tõlli vennapoeg Leiger. Seegi oli niisamasugune tugev mees nagu Suur Tõll, ehk küll viimane jõu poolest temast, üle käis. Leiger ja Suur Tõll armastasivad mõlemad vihtlemist. Suur Tõll käskinud Leigri sauna ehitada,tal enesel polla ehituseks aega. Leiger hakanudki tööle. Vedanud kümne sülla pikkused palgid metsast välja.Neist ehitanud siis vihtlemisesauna. Ahi saanud nii suur nagu saunamehe saun. Kerisekivideks üksi vedanud Leiger seitse sülda ümmargusi kiva kokku. Kui saun valmis saanud, tulnud Suur Tõll Hiiumaale sagedasti vihtlema. Leiger kütnud ahju tublisti soojaks, võtnud siis kummagi õla peale vaadi vett ja viinud leile viskamiseks sauna. Peale selle tapnud Leiger iga korra, kui Suur Tõll sauna tulnud, kaks härga ja keetnud need ära. Saunast ära tulles kutsunud Leiger Suure Tõlli ikka enese juure sööma. Kumbki söönud terve härja ja teo leiva ära. Olnud kõht täis, siis läinud Suur Tõll Saaremaale magama, Leiger aga heitnud tihti sauna leiba luusse laskema. Kuid, siis kui Leiger magas tuli vanapagan kes viis Leigri naise minema ning nii pidigi Leiger asuma pikale retkele.")    
+        print("\nSelsamal ajal, kui Suur Tõll Saaremaal tähtsaid töid tegi\nelas Hiiumaal Tõlli vennapoeg Leiger.\nSeegi oli niisamasugune tugev mees nagu Suur Tõll,\n ehk küll viimane jõu poolest temast, üle käis.\nLeiger ja Suur Tõll armastasivad mõlemad vihtlemist.\nSuur Tõll käskinud Leigri sauna ehitada,tal enesel polla ehituseks aega.\nLeiger hakanudki tööle. Vedanud kümne sülla pikkused \npalgid metsast välja. Neist ehitanud siis \nvihtlemisesauna. Ahi saanud nii suur nagu saunamehe saun.\nKerisekivideks üksi vedanud Leiger seitse sülda ümmargusi kiva kokku.\nKui saun valmis saanud, tulnud Suur Tõll Hiiumaale \nsagedasti vihtlema. Leiger kütnud ahju tublisti soojaks, võtnud siis kummagi õla peale vaadi vett ja viinud leile viskamiseks sauna.\nPeale selle tapnud Leiger iga korra, kui Suur Tõll sauna tulnud, kaks härga ja keetnud need ära.\nSaunast ära tulles kutsunud Leiger Suure Tõlli ikka enese juure sööma.\nKumbki söönud terve härja ja teo leiva ära.\nOlnud kõht täis, siis läinud Suur Tõll Saaremaale magama, Leiger aga heitnud tihti sauna leiba luusse laskema.\nKuid, siis kui Leiger magas tuli vanapagan kes viis\n Leigri naise minema ning nii pidigi Leiger asuma pikale retkele.")    
     else:
         print("Sisestasite vale numbri")
     print()
@@ -71,6 +71,4 @@ def menuu():
     else:
         print("Sisestasite vale numbri, vahemik on 1-3")
     menuu()
-
-
 '''
