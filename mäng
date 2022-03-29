@@ -1,12 +1,20 @@
-
-
-
-
+#Pela nimi
 print("\n------------ Vägimees Leiger ------------\n")
-print("Mängu alustamiseks vajutage [Enter] nupule!")
-input()
 
+#Kuvab menüü valikud
+menu = int(input("\n [1] Alusta \n [2] Load\n [3] Skoor\n [4] Lahku \n\n Sisestage valik: " ))
 
-print("Oli kord aeg, mil Hiiumaal ringles ringi üks vägimees.\nKel nimeks olevat Leiger.")
+#Valitud nr vastab tegevus
+if menu == 1:
+    print("\nAlustasite mänguga")
+elif menu == 2:
+    print("Alustasite viimasest save poindist")
+elif menu == 3:
+     print()
+elif menu == 4:
+     
+#Kui valik on vahemikust väljas annab veateate.
+else:
+    print("Sisestasite vale numbri! Vahemik on 1-4.")
 
 
