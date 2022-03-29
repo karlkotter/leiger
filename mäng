@@ -1,20 +1,56 @@
+from sys import exit
+
+
+
+
 #Pela nimi
-print("\n------------ Vägimees Leiger ------------\n")
+print("\n------------ Vägimees Leiger ------------")
+
+
+
+
+
+#statid
+skoor = 0
+elud = 0
+xp = 0
+armor = 0
+ounad = 0
+
+
+
 
 #Kuvab menüü valikud
 menu = int(input("\n [1] Alusta \n [2] Load\n [3] Skoor\n [4] Lahku \n\n Sisestage valik: " ))
 
 #Valitud nr vastab tegevus
 if menu == 1:
-    print("\nAlustasite mänguga")
+    print("\nAlustasite mänguga\n")
+    #mäng tuleb siia
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 elif menu == 2:
-    print("Alustasite viimasest save poindist")
+    print("\nAlustasite viimasest save pointist")
+    #failiga nussimine jne
+    
 elif menu == 3:
-     print()
-elif menu == 4:
+     print("Teie Skoor: ", skoor)
+     #random penetreerib lambi skoori
      
-#Kui valik on vahemikust väljas annab veateate.
+elif menu == 4:
+    #pab leavi onju, ja ss pab veic luulet
+    print("\nNali naljaks, kusi kaljaks, perse paljaks.")
+    exit() #siin ei saa seivida, kuna mängu pole alustatud.
+    
 else:
-    print("Sisestasite vale numbri! Vahemik on 1-4.")
-
+    print("\nSisestasite vale numbri! Vahemik on 1-4.")
 
