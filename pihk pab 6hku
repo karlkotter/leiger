@@ -1,0 +1,96 @@
+import random
+
+# Karakterid
+class Leiger (object):
+    elud = 100
+    joud = 10
+    armor = 50
+
+class Suur_Toll (object):
+    elud = 150
+    joud = 10
+    armor = 50
+
+# Vastased
+class Ristid (object):
+    nimi = "Ristiuskurid"
+    elud = 50
+    joud = 5
+    loot = random.randint(0,2)
+    
+class Vanapagan (object):
+    nimi = "Vanapagan"
+    elud = 200
+    joud = 8
+    loot = random.randint(0,2)
+
+class Hunt (object):
+    nimi = "Loll Hunt" 
+    elud = 20
+    joud = 3
+    loot = random.randint(0,2)
+
+# Siit saabb valida endale karakter
+def karakteri_valik():
+    print("Valige omale sobilik karakter. ")
+    valik = input("\n[1] Leiger - Hard Mode\n[2] Suur Töll - Easy Mode\n")
+    if valik == "1":
+        karakter = Leiger
+        print("Valisite Leigri")
+        print("Elud: ", karakter.elud)
+        print("Jõud: ", karakter.joud)
+        print("Armor: ", karakter.armor)
+        return karakter
+    elif valik == "2":
+        karakter = Suur_Toll
+        print("Valisite Suure Töllu")
+        print("Elud: ", karakter.elud)
+        print("Jõud: ", karakter.joud)
+        print("Armor: ", karakter.armor)
+        return karakter
+    else:
+        print("Valisite valiku mida pole olemas. Vahemik on 1-2!")
+        karakteri_valik()
+# Siin pop upib lamp vastane
+def vastaste_valik(Ristid, Vanapagan, Hunt):
+    list = [Ristid, Vanapagan, Hunt]
+    aerosool = random.randint(0,2)
+    vastane = list[aerosool]
+    return vastane
+# 
+def loot():
+    loot = ["Kuld", "Hõbe", "Raud", "Alumiinium", "Zink"]
+    aerosool2 = random.randint(0,4)
+    loot2 = loot[aerosool2]
+    return loot2
+
+def steit():
+    vastane = vastaste_valik(Ristid, Vanapagan, Hunt)
+    print("Mingi jorss nimega",vastane.nimi, "Lendas laivi")
+    print("Hoidkem kõva ja vali mis teha tahad\n")
+    while vastane.elud > 0 :
+        valik = input("[1] Pohh pab käega v\n[2] Rüüpa kiviga\n[3] Näita nokut (OP)\n[4] löö kusema ja pane pagema\n")
+        if valik == "1":
+            print("Valisite käe löögi")
+            löök = random.randint(0,10)
+            if löök > 3:
+                vastane.elud = vastane.elud - karakter.joud
+                print ("Said pihta, tal on alles elusid ainult", vastane.elud)
+                
+                if vastane.elud > 0:
+                    karakter.elud = karakter.elud - (vastane.elud / karakter.armor)
+                    print("said", vastane.nimi, "käest normi löögi vastu kukalt, sul on nüüd", karakter.elud, "elu")
+                
+                else:
+                    if vastane.nimi == "Vanapagan":
+                        vastane.elud = 200
+                        
+                    elif vastane.nimi == "Hunt":
+                    vastane.elud = 20
+                    
+                    print("Imekombel saite", vastane.nimi "-ga hakkama")
+                    
+#         https://www.youtube.com/watch?v=vzpH_jXyKEk&list=PLJPiff845eg8hBMJNo6Y2Yo7LKAB8oedh&index=4
+    
+    
+
