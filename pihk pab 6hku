@@ -4,30 +4,33 @@ import random
 class Leiger (object):
     elud = 100
     joud = 10
-    armor = 50
+    kaitse = 20
 
 class Suur_Toll (object):
     elud = 150
     joud = 10
-    armor = 50
+    kaitse = 40
 
 # Vastased
 class Ristid (object):
     nimi = "Ristiuskurid"
     elud = 50
     joud = 5
+    kaitse = 10
     loot = random.randint(0,2)
     
 class Vanapagan (object):
     nimi = "Vanapagan"
-    elud = 200
+    elud = 100
     joud = 8
+    kaitse = 10
     loot = random.randint(0,2)
 
 class Hunt (object):
     nimi = "Loll Hunt" 
     elud = 20
     joud = 3
+    kaitse = 10
     loot = random.randint(0,2)
 
 # Siit saabb valida endale karakter
@@ -39,14 +42,14 @@ def karakteri_valik():
         print("Valisite Leigri")
         print("Elud: ", karakter.elud)
         print("Jõud: ", karakter.joud)
-        print("Armor: ", karakter.armor)
+        print("Kaitse: ", karakter.kaitse)
         return karakter
     elif valik == "2":
         karakter = Suur_Toll
         print("Valisite Suure Töllu")
         print("Elud: ", karakter.elud)
         print("Jõud: ", karakter.joud)
-        print("Armor: ", karakter.armor)
+        print("Kaitse: ", karakter.kaitse)
         return karakter
     else:
         print("Valisite valiku mida pole olemas. Vahemik on 1-2!")
@@ -59,36 +62,113 @@ def vastaste_valik(Ristid, Vanapagan, Hunt):
     return vastane
 # 
 def loot():
-    loot = ["Kuld", "Hõbe", "Raud", "Alumiinium", "Zink"]
-    aerosool2 = random.randint(0,4)
-    loot2 = loot[aerosool2]
-    return loot2
+    loot = ["keppi", "nikku", "suhu", "taha", "ette"]
+    loodi_chanss = random.randint(0,4)
+    lootdrop = loot[loodi_chanss]
+    return lootdrop
 
 def steit():
     vastane = vastaste_valik(Ristid, Vanapagan, Hunt)
     print("Mingi jorss nimega",vastane.nimi, "Lendas laivi")
-    print("Hoidkem kõva ja vali mis teha tahad\n")
     while vastane.elud > 0 :
         valik = input("[1] Pohh pab käega v\n[2] Rüüpa kiviga\n[3] Näita nokut (OP)\n[4] löö kusema ja pane pagema\n")
+        
         if valik == "1":
-            print("Valisite käe löögi")
-            löök = random.randint(0,10)
+            print("\nValisite käe löögi\n")
+            löök = random.randint(0,15)#0-15 on löögi tugevus
             if löök > 3:
                 vastane.elud = vastane.elud - karakter.joud
                 print ("Said pihta, tal on alles elusid ainult", vastane.elud)
                 
                 if vastane.elud > 0:
-                    karakter.elud = karakter.elud - (vastane.elud / karakter.armor)
+                    karakter.elud = karakter.elud - (vastane.joud / karakter.kaitse)
                     print("said", vastane.nimi, "käest normi löögi vastu kukalt, sul on nüüd", karakter.elud, "elu")
                 
                 else:
                     if vastane.nimi == "Vanapagan":
-                        vastane.elud = 200
+                        vastane.elud = 100
                         
                     elif vastane.nimi == "Hunt":
-                    vastane.elud = 20
+                        vastane.elud = 20
                     
-                    print("Imekombel saite", vastane.nimi "-ga hakkama")
+                    elif vastane.nimi == "Ristiuskurid":
+                        vastane.elud = 50
+                    
+                    print("Imekombel saite", vastane.nimi, "-ga hakkama")
+                    lootdrop = loot()
+                    print("Saite talt", lootdrop)
+                    break
+            else:
+                print(vastane.nimi, "Pani sulle full lataka")
+                karakter.elud = karakter.elud - vastane.joud
+                print("Teie elud: ", karakter.elud,"HP")
+                
+        if valik == "2": #valik 2
+            print("\nValisite kiviga rüüpamise\n")
+            löök = random.randint(0,20)#0-20 on löögi tugevus
+            if löök > 3:
+                vastane.elud = vastane.elud - karakter.joud
+                print ("Said pihta, tal on alles elusid ainult", vastane.elud)
+                
+                if vastane.elud > 0:
+                    karakter.elud = karakter.elud - vastane.joud
+                    print("said", vastane.nimi, "käest normi löögi vastu kukalt, sul on nüüd", karakter.elud, "elu")
+                
+                else:
+                    if vastane.nimi == "Vanapagan":
+                        vastane.elud = 100
+                        
+                    elif vastane.nimi == "Hunt":
+                        vastane.elud = 20
+                    
+                    elif vastane.nimi == "Ristiuskurid":
+                        vastane.elud = 50
+                    
+                    print("Imekombel saite", vastane.nimi, "-ga hakkama")
+                    lootdrop = loot()
+                    print("Saite talt", lootdrop)
+                    break
+            else:
+                print(vastane.nimi, "Pani sulle full lataka")
+                karakter.elud = karakter.elud - vastane.joud
+                print("Teie elud: ", karakter.elud,"HP")
+        
+        if valik == "3": #valik 3
+            print("\nValisite noku näitamise\n")
+            löök = (100)
+            karakter.joud = 1000
+            if löök > 3:
+                vastane.elud = vastane.elud - karakter.joud
+                print ("Said pihta, tal on alles elusid ainult", vastane.elud)
+                
+                if vastane.elud > 0:
+                    karakter.elud = karakter.elud - (vastane.joud / karakter.kaitse)
+                    print("said", vastane.nimi, "käest normi löögi vastu kukalt, sul on nüüd", karakter.elud, "elu\n")
+                
+                else:
+                    if vastane.nimi == "Vanapagan":
+                        vastane.elud = 100
+                        
+                    elif vastane.nimi == "Hunt":
+                        vastane.elud = 20
+                    
+                    elif vastane.nimi == "Ristiuskurid":
+                        vastane.elud = 50
+                    
+                    print("Imekombel saite", vastane.nimi, "-ga hakkama")
+                    lootdrop = loot()
+                    print("Saite talt", lootdrop)
+                    break
+            else:
+                print(vastane.nimi, "Pani sulle full lataka")
+                karakter.elud = karakter.elud - vastane.joud
+                print("Teie elud: ", karakter.elud,"HP")
+
+            
+
+karakter = karakteri_valik()
+steit()
+                
                     
 #         https://www.youtube.com/watch?v=vzpH_jXyKEk&list=PLJPiff845eg8hBMJNo6Y2Yo7LKAB8oedh&index=4
     
