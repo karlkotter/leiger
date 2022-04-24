@@ -1,2 +1,2 @@
 # leiger
-käi perse
+tervetuloa maanmies
